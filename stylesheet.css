@@ -1,12 +1,11 @@
 
+
 .border1{
 	height:530px;
 	width:300px;
-	background: linear-gradient(to top, #0066ff -25%, #ccffff 130%);
+	background: linear-gradient(to top, #0066ff -40%, #ccffff 150%);
 	border-radius:25px;
-
-	
-
+	box-shadow:0 0 25px gray, 0 0 5px green;
 }
 .border2{
 	height:520px;
@@ -20,9 +19,10 @@
 .card-3{
 	height:508px;
 	width:278px;
-	background-color:white;
+	background-image:url(bg.jpg);
 	border-radius:15px;
 	margin:6px;
+	background-position:center;
 }
 
 .bezel{
@@ -65,11 +65,20 @@
 	margin:-480px 350px;
 }
 
+.card-2{
+	height:520px;
+	width:290px;
+	background: linear-gradient(to top, #0066ff -110%, #ccffff 100%);
+	border-radius:20px;
+	position:absolute;
+	margin:5px;
+}
+
 .back-camera{
 	position:absolute;
 	height:100px;
 	width:100px;
-	background:radial-gradient( #ccffff  -80%, #0066ff 300%);
+	background:radial-gradient( #ccffff  -100%, #0066ff 700%);
 	border-radius:25px;
 	margin-top:20px;
 	margin-left:20px;
@@ -92,10 +101,10 @@
 }
 
 .flash{
-	height:20px;
-	width: 20px;
-	background:radial-gradient(circle, yellow -20%, white, white);
-	border-radius:22px;
+	height:19px;
+	width: 19px;
+	background:radial-gradient(circle, yellow -20%, #fff44f , white);
+	border-radius:20px;
 	margin-top:40px;
 	margin-left:60px;
 	border:solid #4997D0 1.5px;
@@ -107,16 +116,75 @@ span{
 	margin-top:-90px;
 	margin-left:65px;
 	color:darkgreen;
+	text-shadow:0 0 25px gray, 0 0 5px green;
 
 }
 
-.volume {
+img{
+	margin-top:180px;
+	height:50px;
+	width:50px;
+}
+
+.pwr {
 	position:absolute;
-	height:80px;
+	height:60px;
 	width:4px;
 	background-color:gray;
 	border-bottom-left-radius:5px;
 	border-top-left-radius:5px;
 	margin-top:110px;
 	margin-left:-4px;
+}
+
+.vol {
+	position:absolute;
+	margin-top:80px;
+	margin-left:300px
+}
+
+.vol-up{
+	height:40px;
+	width: 4px;
+	background-color: gray;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+	margin-bottom:20px;
+}
+
+.vol-dn{
+	height:40px;
+	width: 4px;
+	background-color: gray;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+
+.container{
+	margin:auto;
+	width:50%;
+}
+
+@media screen and (max-width:1440px){
+	.container{
+		width:50%;
+	}
+}
+
+@media screen and (max-width:1024px){
+	.container{
+		width:65%;
+	}
+}
+
+@media screen and (max-width:768px){
+	.container{
+		width:85%;
+	}
+}
+
+@media screen and (max-width:425px){
+	.container{
+		width:100%;
+	}
 }
